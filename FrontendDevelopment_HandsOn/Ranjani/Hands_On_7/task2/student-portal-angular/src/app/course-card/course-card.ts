@@ -3,10 +3,9 @@ import { Course } from '../course';
 
 @Component({
   selector: 'app-course-card',
-  standalone: true,
   imports: [],
   templateUrl: './course-card.html',
-  styleUrl: './course-card.css'
+  styleUrl: './course-card.css',
 })
 export class CourseCard {
 

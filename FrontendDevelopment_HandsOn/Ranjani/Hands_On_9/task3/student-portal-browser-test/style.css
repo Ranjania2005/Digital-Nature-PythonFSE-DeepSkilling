@@ -1,0 +1,123 @@
+/*
+Task 3 Accessibility Notes:
+
+Colour Contrast Check:
+
+Before:
+Text: #777777
+Background: #ffffff
+Contrast ratio: 4.48:1 (Failed WCAG AA)
+
+After:
+Text: #333333
+Background: #ffffff
+Contrast ratio: 12.63:1 (Passed WCAG AA)
+
+CSS Feature Tested:
+Feature: CSS Flexbox gap property
+
+Checked using:
+https://caniuse.com/
+
+Result:
+Supported in modern Chrome, Firefox, Edge and Safari.
+
+Polyfill:
+CSS variables ponyfill added in index.html for older browser support.
+*/
+
+
+:root {
+
+    --primary-color: #333333;
+    --background-color: #ffffff;
+    --card-color: #f4f4f4;
+
+}
+
+
+
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+
+}
+
+
+
+header {
+
+    background-color: #222;
+    color: white;
+    padding: 20px;
+
+}
+
+
+
+nav {
+
+    display: flex;
+    gap: 20px;
+
+}
+
+
+
+nav a {
+
+    color: white;
+    text-decoration: none;
+
+}
+
+
+
+main {
+
+    margin-top: 30px;
+
+}
+
+
+
+.course-container {
+
+    display: flex;
+    gap: 20px;
+
+}
+
+
+
+.course-card {
+
+    background-color: var(--card-color);
+    padding: 20px;
+    width: 250px;
+    border-radius: 10px;
+
+}
+
+
+
+button {
+
+    padding: 10px 15px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+
+}
+
+
+
+button:hover {
+
+    background-color: #555;
+
+}

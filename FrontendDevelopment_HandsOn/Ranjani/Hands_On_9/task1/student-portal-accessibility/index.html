@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Portal</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+   <!--
+Initial Lighthouse Accessibility Audit:
+
+Accessibility Score: 87
+
+Issues Found:
+1. Form elements do not have associated labels.
+2. Image elements do not have alt attributes.
+3. Heading elements are not in sequential order.
+
+Fixes Applied:
+1. Added labels for all input fields.
+2. Added descriptive alt text for images.
+3. Corrected heading hierarchy.
+-->
+
+    <header>
+        <h1>Student Portal</h1>
+
+        <nav>
+            <a href="#">Home</a>
+            <a href="#">Courses</a>
+            <a href="#">Profile</a>
+        </nav>
+    </header>
+
+
+    <main>
+
+        <section>
+
+            <h2>Available Courses</h2>
+
+            <label for="search">
+    Search Courses
+</label>
+
+<input 
+id="search"
+type="text"
+placeholder="Search courses">
+
+
+            <div class="course-card">
+
+                <img src="course.png" alt="Angular Fundamentals course image">
+
+                <h3>Angular Fundamentals</h3>
+
+                <p>
+                    Learn Angular components,
+                    services and routing.
+                </p>
+
+                <div onclick="enroll()">
+                    Enroll
+                </div>
+
+            </div>
+
+
+            <div class="course-card">
+
+                <img src="react.png" alt="React Basics course image">
+
+                <h3>React Basics</h3>
+
+                <p>
+                    Learn React components
+                    and state management.
+                </p>
+
+                <div onclick="enroll()">
+                    Enroll
+                </div>
+
+            </div>
+
+
+        </section>
+
+
+
+        <section>
+
+            <h2>Student Profile</h2>
+
+           <form>
+
+    <label for="name">
+        Name
+    </label>
+
+    <input 
+    id="name"
+    type="text"
+    placeholder="Enter name">
+
+
+    <label for="email">
+        Email
+    </label>
+
+    <input 
+    id="email"
+    type="email"
+    placeholder="Enter email">
+
+
+    <button>
+        Submit
+    </button>
+
+</form>
+
+        </section>
+
+
+    </main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

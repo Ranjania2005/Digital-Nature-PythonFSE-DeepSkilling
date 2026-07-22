@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portal - Accessibility</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+
+<h1>Student Portal</h1>
+<button 
+id="menuButton"
+aria-expanded="false"
+onclick="toggleMenu()">
+
+Menu
+
+</button>
+<nav aria-label="Main navigation">
+
+<a href="#" aria-current="page">Home</a>
+<a href="#">Courses</a>
+<a href="#">Profile</a>
+
+</nav>
+
+</header>
+
+
+<main>
+
+<h2>Available Courses</h2>
+
+
+<label for="search">
+Search Courses
+</label>
+
+<input 
+id="search"
+type="text"
+oninput="searchCourses()">
+
+
+<p 
+id="result-count"
+role="status"
+aria-live="polite">
+3 courses found
+</p>
+
+
+
+<div 
+class="course-card"
+tabindex="0"
+onkeydown="handleCardKey(event,'Angular Fundamentals')">
+
+<h3>Angular Fundamentals</h3>
+
+<p>
+Learn Angular components and routing.
+</p>
+
+<button onclick="enroll('Angular Fundamentals')">
+Enroll
+</button>
+
+</div>
+
+
+
+<div 
+class="course-card"
+tabindex="0"
+onkeydown="handleCardKey(event,'React Basics')">
+
+<h3>React Basics</h3>
+
+<p>
+Learn React components and state management.
+</p>
+
+<button onclick="enroll('React Basics')">
+Enroll
+</button>
+
+</div>
+
+
+</main>
+
+
+<script src="script.js"></script>
+
+</body>
+
+</html>

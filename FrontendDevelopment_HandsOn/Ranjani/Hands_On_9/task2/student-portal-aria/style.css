@@ -1,0 +1,80 @@
+body {
+
+    font-family: Arial, sans-serif;
+    margin: 30px;
+    background-color: #f4f4f4;
+
+}
+
+
+header {
+
+    background-color: #333;
+    color: white;
+    padding: 20px;
+
+}
+
+
+nav a {
+
+    color: white;
+    margin-right: 20px;
+    text-decoration: none;
+
+}
+
+
+nav a:focus {
+
+    outline: 3px solid yellow;
+
+}
+
+
+main {
+
+    margin-top: 30px;
+
+}
+
+
+.course-card {
+
+    background-color: white;
+    padding: 20px;
+    margin: 20px 0;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+
+.course-card:focus {
+
+    outline: 3px solid blue;
+
+}
+
+
+button {
+
+    padding: 10px 15px;
+    cursor: pointer;
+
+}
+
+
+button:focus {
+
+    outline: 3px solid green;
+
+}
+
+
+input {
+
+    padding: 10px;
+    margin: 10px 0;
+
+}

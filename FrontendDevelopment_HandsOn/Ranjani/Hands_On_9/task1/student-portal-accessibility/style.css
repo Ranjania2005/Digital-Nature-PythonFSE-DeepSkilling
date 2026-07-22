@@ -1,0 +1,43 @@
+body {
+
+    font-family: Arial, sans-serif;
+
+    background-color: white;
+
+    color: #333;
+
+}
+
+
+header {
+
+    padding:20px;
+
+    background:#dddddd;
+
+}
+
+
+nav a {
+
+    margin:10px;
+
+}
+
+
+.course-card {
+
+    border:1px solid #999;
+
+    padding:20px;
+
+    margin:20px;
+
+}
+
+
+button {
+
+    padding:10px;
+
+}
